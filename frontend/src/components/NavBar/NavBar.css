@@ -1,0 +1,54 @@
+.NavBar{
+    height: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 899;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.NavBar nav ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.NavBar nav ul li{
+    display:inline-block;
+    font-size: 20px;
+}
+
+.white{
+    color:black;
+}
+
+.NavBar .menu{
+    opacity: 1;
+    z-index: 900;
+}
+
+.menu{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    cursor: pointer;
+}
+
+.NavBar nav ul{
+    width: 100%;
+    background-color: #0627ce;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.NavBar nav ul li{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #0627ce;
+    right:0;
+    padding: 5px;
+    width: 100%; 
+}

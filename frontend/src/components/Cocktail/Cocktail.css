@@ -1,0 +1,12 @@
+.grad-bckgrnd {
+    background: linear-gradient(42deg, rgba(19,11,142,1) 0%, rgba(9,9,193,1) 17%, rgba(6,72,212,1) 35%, rgba(0,212,255,1) 65%, rgba(0,255,195,1) 91%);
+}
+.images {
+    border-radius: 20%;
+}
+.hover-transform {
+    @apply transition ease-in-out hover:-translate-y-7 hover:scale-110  duration-700
+}
+.button-mix{
+    @apply mt-5 bg-teal-300 rounded-3xl
+}
