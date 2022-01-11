@@ -3,15 +3,16 @@
  - [Configuration](#Configuration)
 	 - [First set up](#First-set-up)
 	 - [Run](#Run)
+<!---
+- [Backend](#backend) 
+	- [API](#api) 
+	- [Models](#models) 
+	- [Serializers](#serializers) 
 
-- [Backend](#backend)
-	- [API](#api)
-	- [Models](#models)
-	- [Serializers](#serializers)
-
-- [Frontend](#frontend)
-	- [Pages](#pages)
-	- [Components](#components)
+- [Frontend](#frontend) 
+	- [Pages](#pages) 
+	- [Components](#components)) 
+-->
 
 ## Configuration ## 
 ### First set up ###
