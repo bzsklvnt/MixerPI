@@ -1,7 +1,7 @@
 ## Documentation ##
 
  - [Configuration](#Configuration)
-	 - [First set up](#First set up)
+	 - [First set up](#First-set-up)
 	 - [Run](#Run)
 
 - [Backend](#backend)
@@ -40,7 +40,7 @@ On Windows
 - Install the packages needed in the virual environment ``pip install -r requirements.txt``
 - Create the database ``python manage.py migrate``
 
-#### Frontend ####  
+#### Frontend (React) ####  
 - In the (MixerPI/frontend) folder run : ``npm install``
 	
 ### Run ###
