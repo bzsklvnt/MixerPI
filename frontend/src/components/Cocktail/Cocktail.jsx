@@ -11,18 +11,19 @@ import Typography from '@mui/material/Typography';
 const Cocktail = (props) => {
   const [cocktailList, setCocktailList] = useState(props.cocktails)
 
-  const sendToPi = (e) => {
+  const sendToPi = (e, id) => {
     e.preventDefault()
+    console.log(id);
     var res = Math.floor(Math.random() * (Math.floor(202) - Math.ceil(198)) + Math.ceil(198))
     if (res === 200) {
-      toast.success('Mixing started successfully!' + res)
+      toast.success(`Mixing started successfully!${res}, id: ${id}`)
     } else {
-      toast.error("Couldn't access PI!" + res)
+      toast.error(`Could not access pi!${res}, id: ${id}`)
     }
   }
 
   return (
-    <form onSubmit={(e) => sendToPi(e)}>
+    // <form onSubmit={(e) => sendToPi(e)}>
       <React.Fragment>
         <ToastContainer />
         <Grid className='mt-4'>
@@ -49,7 +50,8 @@ const Cocktail = (props) => {
                       </Grid>
                     )
                   })}
-                    <Button style={{ background: '#00ffc3', borderRadius: '2rem', padding: '.5rem 1rem', marginTop:'.3rem'}} className='px-2' endIcon={<SendIcon />} type='submit'>
+                    <Button style={{ background: '#00ffc3', borderRadius: '2rem', padding: '.5rem 1rem', marginTop:'.3rem'}} className='px-2' endIcon={<SendIcon />} type='button'
+                      onClick={(e) => sendToPi(e, cocktail)}>
                       Mix me
                     </Button>
                 </Paper>
@@ -58,7 +60,6 @@ const Cocktail = (props) => {
           })}
         </Grid>
       </React.Fragment>
-    </form>
   )
 }
 
